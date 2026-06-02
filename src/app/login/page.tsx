@@ -51,9 +51,13 @@ export default function LoginPage() {
           </div>
 
           <div className="mt-6 text-center">
-            <p className="text-xs text-gray-500">
-              By logging in, you agree to our <Link href="#" className="text-blue-400 hover:underline">Terms of Service</Link> and <Link href="#" className="text-blue-400 hover:underline">Privacy Policy</Link>.
-            </p>
+            <div className="mt-6 p-3 bg-blue-500/10 border border-blue-500/20 rounded-lg text-xs text-blue-200 text-center">
+            🔒 <strong>Secure Login:</strong> You will be redirected to the official Roblox.com website. We never see, ask for, or store your password.
+          </div>
+
+          <p className="mt-4 text-center text-xs text-muted-foreground">
+            By logging in, you agree to our <a href="/terms" className="text-blue-400 hover:underline">Terms of Service</a> and <a href="/privacy-policy" className="text-blue-400 hover:underline">Privacy Policy</a>.
+          </p>
           </div>
         </div>
       </div>
