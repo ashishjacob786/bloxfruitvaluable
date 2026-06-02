@@ -1,0 +1,184 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Category {
+  FRUIT
+  GAMEPASS
+  SCROLL
+  PERMANENT
+}
+
+enum Rarity {
+  COMMON
+  UNCOMMON
+  RARE
+  LEGENDARY
+  MYTHICAL
+}
+
+enum Trend {
+  UP
+  DOWN
+  STABLE
+}
+
+model Item {
+  id                    String         @id @default(uuid())
+  name                  String
+  slug                  String         @unique
+  category              Category
+  rarity                Rarity
+  imageUrl              String
+  inGamePriceBeli       Int?
+  inGamePriceRobux      Int?
+  currentTradingValue   BigInt
+  demandScore           Int            // 1-10
+  trend                 Trend          @default(STABLE)
+  
+  // SEO & Content
+  seoTitle              String?
+  seoDescription        String?
+  seoArticleContent     String?        @db.Text
+  
+  // Timestamps
+  createdAt             DateTime       @default(now())
+  updatedAt             DateTime       @updatedAt
+
+  // Relations
+  priceHistory          PriceHistory[]
+}
+
+model PriceHistory {
+  id                    String   @id @default(uuid())
+  itemId                String
+  tradingValue          BigInt
+  recordedAt            DateTime @default(now())
+
+  item                  Item     @relation(fields: [itemId], references: [id], onDelete: Cascade)
+}
+
+// ----------------------------------------
+// NextAuth Models (Roblox Authentication)
+// ----------------------------------------
+
+model Account {
+  id                 String  @id @default(cuid())
+  userId             String
+  type               String
+  provider           String
+  providerAccountId  String
+  refresh_token      String?  @db.Text
+  access_token       String?  @db.Text
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String?  @db.Text
+  session_state      String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  
+  accounts      Account[]
+  sessions      Session[]
+  
+  // Custom relations
+  messages      ChatMessage[]
+  messageViews  MessageView[]
+  tradeAds      TradeAd[]
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// ----------------------------------------
+// Application Models
+// ----------------------------------------
+
+model ChatMessage {
+  id        String   @id @default(cuid())
+  topic     String
+  text      String
+  timestamp DateTime @default(now())
+
+  // Relations
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  replyToId String?
+  replyTo   ChatMessage?  @relation("Replies", fields: [replyToId], references: [id])
+  replies   ChatMessage[] @relation("Replies")
+
+  viewedBy  MessageView[]
+}
+
+model MessageView {
+  id        String   @id @default(cuid())
+  messageId String
+  userId    String
+  viewedAt  DateTime @default(now())
+
+  message   ChatMessage @relation(fields: [messageId], references: [id], onDelete: Cascade)
+  user      User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([messageId, userId])
+}
+
+enum TradeType {
+  LOOKING_FOR
+  TRADING
+}
+
+model TradeAd {
+  id          String    @id @default(cuid())
+  type        TradeType
+  description String?
+  createdAt   DateTime  @default(now())
+  
+  // Relations
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Items involved
+  hasItems    TradeItem[] @relation("HasItems")
+  wantsItems  TradeItem[] @relation("WantsItems")
+}
+
+model TradeItem {
+  id          String   @id @default(cuid())
+  itemId      String
+  
+  // Relations to TradeAd
+  hasAdId     String?
+  hasAd       TradeAd? @relation("HasItems", fields: [hasAdId], references: [id], onDelete: Cascade)
+  
+  wantsAdId   String?
+  wantsAd     TradeAd? @relation("WantsItems", fields: [wantsAdId], references: [id], onDelete: Cascade)
+}
