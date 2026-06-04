@@ -56,7 +56,7 @@ export default function ValuesListPage() {
             className={`px-8 py-2.5 rounded-full text-sm font-black transition-all ${
               variant === "REGULAR" 
                 ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-gray-900 dark:text-white shadow-[0_0_15px_rgba(37,99,235,0.4)]" 
-                : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:text-white hover:bg-gray-100 dark:bg-white/5"
+                : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10"
             }`}
           >
             Regular
@@ -69,7 +69,7 @@ export default function ValuesListPage() {
             className={`px-8 py-2.5 rounded-full text-sm font-black transition-all ${
               variant === "PERMANENT" 
                 ? "bg-gradient-to-r from-purple-600 to-pink-600 text-gray-900 dark:text-white shadow-[0_0_15px_rgba(147,51,234,0.4)]" 
-                : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:text-white hover:bg-gray-100 dark:bg-white/5"
+                : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10"
             }`}
           >
             Permanent
@@ -86,7 +86,7 @@ export default function ValuesListPage() {
               className={`px-4 py-2 rounded-md text-sm font-bold transition ${
                 filter === cat
                   ? 'bg-blue-600 text-gray-900 dark:text-white shadow-[0_0_10px_rgba(37,99,235,0.5)]' 
-                  : 'bg-transparent text-muted-foreground hover:text-gray-900 dark:text-white hover:bg-gray-100 dark:bg-white/5'
+                  : 'bg-transparent text-muted-foreground hover:text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10'
               }`}
             >
               {cat === "ALL" ? "All Items" : cat}
@@ -122,7 +122,7 @@ export default function ValuesListPage() {
             </thead>
             <tbody>
               {filteredItems.map((item, idx) => (
-                <tr key={item.id} className={`border-b border-gray-200 dark:border-white/5 hover:bg-gray-100 dark:bg-white/5 transition-colors ${idx % 2 === 0 ? 'bg-transparent' : 'bg-[#000000]/20'}`}>
+                <tr key={item.id} className={`border-b border-gray-200 dark:border-white/5 hover:bg-gray-100 dark:hover:bg-white/10 transition-colors ${idx % 2 === 0 ? 'bg-transparent' : 'bg-[#000000]/20'}`}>
                   <td className="p-4">
                     <Link href={`/item/${item.slug}`} className="flex items-center gap-4 group">
                       <div className="w-12 h-12 rounded-lg bg-white dark:bg-black/50 p-1 flex items-center justify-center border border-gray-200 dark:border-white/10 group-hover:border-blue-500/50 transition">
