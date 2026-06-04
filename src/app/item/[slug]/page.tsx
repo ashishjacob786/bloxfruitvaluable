@@ -65,28 +65,8 @@ export default async function ItemPage({ params }: { params: Promise<{ slug: str
     );
   }
 
-  // JSON-LD structured data for Google
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": `${item.name} (Blox Fruits)`,
-    "image": item.imageUrl,
-    "description": `Live trading value for ${item.name} in Blox Fruits.`,
-    "category": item.category,
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "USD",
-      "price": item.robuxPrice ? (item.robuxPrice * 0.0125).toFixed(2) : "0.00",
-      "availability": "https://schema.org/InStock"
-    }
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <ItemClient item={item} />
     </>
   );
