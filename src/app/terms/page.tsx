@@ -6,7 +6,7 @@ export const metadata = {
   title: "Terms of Service",
   description: "Terms of Service for BloxFruitValuable.com",
   alternates: {
-    canonical: "/terms",
+    canonical: "https://www.bloxfruitvaluable.com/terms",
   },
   openGraph: {
     title: "Terms of Service | BloxFruitValuable",

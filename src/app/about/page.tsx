@@ -6,7 +6,7 @@ export const metadata = {
   title: "About Us",
   description: "Learn about the mission and team behind BloxFruitValuable.com",
   alternates: {
-    canonical: "/about",
+    canonical: "https://www.bloxfruitvaluable.com/about",
   },
   openGraph: {
     title: "About Us | BloxFruitValuable",

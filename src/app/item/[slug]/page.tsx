@@ -22,6 +22,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${item.name} Value - ${formatValue(item.currentTradingValue)}`,
     description,
     keywords: [`${item.name} value`, `blox fruits ${item.name}`, `${item.name} trading`, `blox fruits values`, item.category.toLowerCase()],
+    alternates: {
+      canonical: `https://www.bloxfruitvaluable.com/item/${item.slug}`,
+    },
     openGraph: {
       title,
       description,

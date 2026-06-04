@@ -6,7 +6,7 @@ export const metadata = {
   title: "Contact Us",
   description: "Get in touch with the BloxFruitValuable team for support, bug reports, and business inquiries.",
   alternates: {
-    canonical: "/contact",
+    canonical: "https://www.bloxfruitvaluable.com/contact",
   },
   openGraph: {
     title: "Contact Us | BloxFruitValuable",

@@ -6,7 +6,7 @@ export const metadata = {
   title: "Privacy Policy",
   description: "Privacy Policy for BloxFruitValuable.com",
   alternates: {
-    canonical: "/privacy-policy",
+    canonical: "https://www.bloxfruitvaluable.com/privacy-policy",
   },
   openGraph: {
     title: "Privacy Policy | BloxFruitValuable",

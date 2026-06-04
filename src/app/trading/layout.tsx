@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Trading Hub | Find Trades Instantly",
   description: "Post your trades and find the perfect offer for your Blox Fruits. Match with active players in real-time.",
   alternates: {
-    canonical: "/trading",
+    canonical: "https://www.bloxfruitvaluable.com/trading",
   },
   openGraph: {
     title: "Trading Hub | Find Trades Instantly",
