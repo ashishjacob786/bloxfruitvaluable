@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.bloxfruitvaluable.com"),
   alternates: {
-    canonical: "/",
+    canonical: "https://www.bloxfruitvaluable.com/",
   },
   title: {
     template: "%s | BloxFruitValuable.com",
