@@ -524,6 +524,24 @@ export default function CommunityPage() {
           </div>
         </div>
       </div>
+
+      {/* Structured Data for SEO: WebPage */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Blox Fruits Community Chat",
+            "url": "https://www.bloxfruitvaluable.com/community",
+            "description": "Join the active Blox Fruits community chat. Discuss W/F/L, organize giveaways, and get admin support.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "BloxFruitValuable"
+            }
+          })
+        }}
+      />
     </div>
   );
 }
