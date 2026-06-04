@@ -145,9 +145,9 @@ export default function TradingHubPage() {
           <p className="text-muted-foreground mb-4">Find the best trades from the community in real-time.</p>
           
           {/* SEO Text Expansion for Thin Content Issue */}
-          <div className="max-w-3xl mb-4 hidden md:block">
-            <h2 className="text-sm font-bold text-gray-900 dark:text-white mb-1">Welcome to the Blox Fruits Trading Hub</h2>
-            <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
+          <div className="max-w-3xl mb-4">
+            <h2 className="text-[11px] md:text-sm font-bold text-gray-900 dark:text-white mb-1">Welcome to the Blox Fruits Trading Hub</h2>
+            <p className="text-[10px] md:text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
               Looking for a specific fruit like Kitsune, Leopard, or Dragon? The BloxFruitValuable Trading Hub connects you directly with thousands of active Roblox players. Browse live trade advertisements, find massive W (Win) trades, and securely copy Discord tags or Roblox Usernames to complete your deals in-game. Post your own trade ad by clicking "Create Trade Ad" and watch the offers roll in!
             </p>
           </div>

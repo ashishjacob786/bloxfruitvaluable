@@ -276,8 +276,8 @@ export default function CommunityPage() {
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">Join a topic and chat with other players safely!</p>
         
         {/* SEO Text Expansion for Thin Content Issue */}
-        <div className="max-w-2xl text-center hidden md:block">
-          <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
+        <div className="max-w-2xl text-center px-4 md:px-0">
+          <p className="text-[10px] md:text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
             Welcome to the official <strong>Blox Fruits Community Chat</strong>! Discuss the latest update, ask for W/F/L (Win, Fair, Loss) advice on your trades, or participate in fruit giveaways. Connect with other Roblox players in real-time, share your best loadouts, and get direct support from the BloxFruitValuable admin team. Please follow the rules and do not spam links!
           </p>
         </div>
