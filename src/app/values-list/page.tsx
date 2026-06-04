@@ -169,6 +169,26 @@ export default function ValuesListPage() {
           </table>
         </div>
       </div>
+
+      {/* Structured Data for SEO: ItemList */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": [...ALL_ITEMS]
+              .sort((a, b) => b.currentTradingValue - a.currentTradingValue)
+              .slice(0, 10)
+              .map((item, idx) => ({
+                "@type": "ListItem",
+                "position": idx + 1,
+                "name": item.name,
+                "url": `https://www.bloxfruitvaluable.com/item/${item.slug}`
+              }))
+          }),
+        }}
+      />
     </div>
   );
 }
