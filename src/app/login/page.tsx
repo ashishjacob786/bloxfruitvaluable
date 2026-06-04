@@ -24,11 +24,11 @@ export default function LoginPage() {
         
         <div className="relative z-10">
           <div className="text-center">
-            <h2 className="mt-6 text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-              Sign in to your account
+            <h2 className="mt-6 text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+              Connect via Official OAuth
             </h2>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              Link your Roblox account to access community features and trading hubs.
+              Verify your Roblox identity securely using the official Roblox OAuth provider.
             </p>
           </div>
           
@@ -46,7 +46,7 @@ export default function LoginPage() {
                   <path d="M4.5 12L12 4.5L19.5 12L12 19.5L4.5 12ZM10.5 12L12 10.5L13.5 12L12 13.5L10.5 12Z" />
                 </svg>
               )}
-              {loading ? "Authenticating..." : "Sign in with Roblox"}
+              {loading ? "Authenticating..." : "Verify with Roblox"}
             </button>
           </div>
 
