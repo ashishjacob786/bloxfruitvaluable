@@ -525,16 +525,20 @@ export default function CommunityPage() {
         </div>
       </div>
 
-      {/* Structured Data for SEO: WebPage */}
+      {/* Structured Data for SEO: DiscussionForumPosting */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Blox Fruits Community Chat",
+            "@type": "DiscussionForumPosting",
+            "headline": "Blox Fruits Community Chat & Live Discussions",
             "url": "https://www.bloxfruitvaluable.com/community",
             "description": "Join the active Blox Fruits community chat. Discuss W/F/L, organize giveaways, and get admin support.",
+            "author": {
+              "@type": "Organization",
+              "name": "BloxFruitValuable"
+            },
             "publisher": {
               "@type": "Organization",
               "name": "BloxFruitValuable"
