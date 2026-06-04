@@ -5,6 +5,14 @@ import { ArrowLeft, Bug, TrendingUp, Briefcase, Mail, MessageCircle, AlertTriang
 export const metadata = {
   title: "Contact Us",
   description: "Get in touch with the BloxFruitValuable team for support, bug reports, and business inquiries.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact Us | BloxFruitValuable",
+    description: "Get in touch with the BloxFruitValuable team for support, bug reports, and business inquiries.",
+    url: "https://www.bloxfruitvaluable.com/contact",
+  },
 };
 
 export default function ContactUsPage() {

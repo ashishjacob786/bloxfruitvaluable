@@ -15,7 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bloxfruitvaluable.com"),
+  metadataBase: new URL("https://www.bloxfruitvaluable.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     template: "%s | BloxFruitValuable.com",
     default: "Blox Fruit Valuable | Real-Time Trades & Calculator",
@@ -26,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Blox Fruit Valuable | Real-Time Trades & Calculator",
     description: "Discover real-time values, create trade ads, and calculate W/F/L trades for Blox Fruits.",
-    url: "https://bloxfruitvaluable.com",
+    url: "https://www.bloxfruitvaluable.com",
     siteName: "BloxFruitValuable",
     images: [
       {

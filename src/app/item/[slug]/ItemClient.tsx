@@ -103,7 +103,10 @@ export default function ItemClient({ item }: { item: any }) {
                    <Minus className="w-4 h-4" />}
                   {item.trend === 'UP' ? 'RISING' : item.trend === 'DOWN' ? 'FALLING' : (item.trend || 'STABLE').toUpperCase()} TREND
                 </span>
-                <span className="text-xs text-muted-foreground font-medium">Updated 3 mins ago</span>
+                <span className="text-xs text-muted-foreground font-medium flex items-center gap-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
+                  Live Updates
+                </span>
               </div>
             </div>
           </div>
@@ -156,19 +159,89 @@ export default function ItemClient({ item }: { item: any }) {
             <div className="bg-gray-50 dark:bg-[#0a0a0f]/50 border border-gray-200 dark:border-white/5 rounded-3xl p-8">
               <h3 className="text-xl font-black text-gray-900 dark:text-white mb-6">Expert Assessment</h3>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                The <strong className="text-gray-900 dark:text-white">{item.name}</strong> is currently a <strong className="text-blue-400">{item.rarity}</strong> tier item in Blox Fruits. 
-                With a community demand score of <strong className="text-green-400">{item.demand || "8/10"}</strong>, it is considered highly sought after. 
-                The market trend is showing signs of being <strong className="text-gray-900 dark:text-white">{item.trend || "Stable"}</strong>, meaning its value is unlikely to change drastically in the next few updates.
+                The <strong className="text-gray-900 dark:text-white">{item.name}</strong> is {item.rarity === 'Mythical' ? 'an incredibly rare and prestigious' : item.rarity === 'Legendary' ? 'a highly valuable' : 'a well-known'} <strong className="text-blue-400">{item.rarity}</strong> tier item in Blox Fruits. 
+                {item.demandScore >= 8 ? (
+                  <span> With an outstanding community demand score of <strong className="text-green-400">{item.demand || "8/10"}</strong>, players are constantly searching for it in the Trading Hub.</span>
+                ) : item.demandScore >= 5 ? (
+                  <span> It maintains a solid community demand score of <strong className="text-yellow-400">{item.demand || "5/10"}</strong>, making it a decent add-on for larger trades.</span>
+                ) : (
+                  <span> Its current community demand score sits at <strong className="text-red-400">{item.demand || "3/10"}</strong>, so it might take some time to find the right buyer.</span>
+                )}
+                {" "}
+                {item.trend === 'Rising' || item.trend === 'UP' ? (
+                  <span>The market trend is currently <strong className="text-green-500">Rising</strong>, indicating that its value is actively inflating.</span>
+                ) : item.trend === 'Falling' || item.trend === 'DOWN' ? (
+                  <span>The market trend is currently <strong className="text-red-500">Falling</strong>, suggesting players are losing interest or a nerf occurred.</span>
+                ) : item.trend === 'Overpaid' ? (
+                  <span>The market trend shows it is actively <strong className="text-purple-500">Overpaid</strong>, meaning you can easily squeeze extra value out of desperate traders.</span>
+                ) : (
+                  <span>The market trend is showing signs of being <strong className="text-gray-900 dark:text-white">Stable</strong>, meaning its value is unlikely to change drastically in the next few updates.</span>
+                )}
               </p>
               
               <div className="bg-blue-900/20 border border-blue-500/20 rounded-xl p-5">
                 <h4 className="text-blue-400 font-bold mb-2 text-sm uppercase tracking-wider">Trading Advice</h4>
                 <p className="text-sm text-blue-200">
-                  {item.trend === "Overpaid" || item.trend === "Rising" 
+                  {item.trend === "Overpaid" || item.trend === "Rising" || item.trend === "UP"
                     ? `Hold onto this item! Users are actively overpaying for ${item.name}. Wait for massive offers (W's) before accepting any trades.` 
+                    : item.trend === "Falling" || item.trend === "DOWN"
+                    ? `Consider trading ${item.name} soon before its value drops further. Try to bundle it with high-demand fruits to get a better deal.`
                     : `Be careful when trading ${item.name}. Ensure you use the calculator to verify you are getting equal value back, as demand is standard.`}
                 </p>
               </div>
+
+              {/* Structured Data for Item and Breadcrumbs */}
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify([
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "ItemPage",
+                      "mainEntity": {
+                        "@type": "Product",
+                        "name": `${item.name} - Blox Fruits`,
+                        "image": item.imageUrl,
+                        "description": `Real-time trading value, demand, and expert assessment for ${item.name} in Blox Fruits.`,
+                        "brand": {
+                          "@type": "Brand",
+                          "name": "Roblox Blox Fruits"
+                        },
+                        "offers": {
+                          "@type": "Offer",
+                          "price": item.currentTradingValue,
+                          "priceCurrency": "USD", 
+                          "availability": "https://schema.org/InStock"
+                        }
+                      }
+                    },
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "BreadcrumbList",
+                      "itemListElement": [
+                        {
+                          "@type": "ListItem",
+                          "position": 1,
+                          "name": "Home",
+                          "item": "https://www.bloxfruitvaluable.com/"
+                        },
+                        {
+                          "@type": "ListItem",
+                          "position": 2,
+                          "name": "Values List",
+                          "item": "https://www.bloxfruitvaluable.com/values-list"
+                        },
+                        {
+                          "@type": "ListItem",
+                          "position": 3,
+                          "name": item.name,
+                          "item": `https://www.bloxfruitvaluable.com/item/${item.slug}`
+                        }
+                      ]
+                    }
+                  ]),
+                }}
+              />
             </div>
 
             <div className="space-y-4">

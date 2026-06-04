@@ -5,6 +5,14 @@ import { ArrowLeft, Target, Users, Zap, Shield, HelpCircle, HeartHandshake } fro
 export const metadata = {
   title: "About Us",
   description: "Learn about the mission and team behind BloxFruitValuable.com",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Us | BloxFruitValuable",
+    description: "Learn about the mission and team behind BloxFruitValuable.com",
+    url: "https://www.bloxfruitvaluable.com/about",
+  },
 };
 
 export default function AboutUsPage() {
@@ -49,6 +57,22 @@ export default function AboutUsPage() {
               <p className="mb-4">
                 We aren't just another generic gaming blog. Blox Fruit Valuable is built by a passionate team of professional developers and digital tool creators who understand both modern web technology and the complex economy of Blox Fruits.
               </p>
+              <div className="grid md:grid-cols-2 gap-4 mt-6 mb-4">
+                <div className="bg-white dark:bg-black/40 border border-gray-200 dark:border-white/10 p-4 rounded-xl flex items-center gap-4">
+                  <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center font-bold text-blue-400">AJ</div>
+                  <div>
+                    <h4 className="font-bold text-gray-900 dark:text-white">Ashish Jacob</h4>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">Lead Developer & Data Analyst</p>
+                  </div>
+                </div>
+                <div className="bg-white dark:bg-black/40 border border-gray-200 dark:border-white/10 p-4 rounded-xl flex items-center gap-4">
+                  <div className="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center font-bold text-purple-400">TR</div>
+                  <div>
+                    <h4 className="font-bold text-gray-900 dark:text-white">TradeReview Team</h4>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">Market Value Experts</p>
+                  </div>
+                </div>
+              </div>
               <p>
                 We love building high-performance, scalable platforms. By leveraging modern tech, we ensure that our site doesn't just look good, but performs flawlessly—whether you are quickly checking a fruit's value on your phone mid-trade or chatting with other players on your desktop.
               </p>

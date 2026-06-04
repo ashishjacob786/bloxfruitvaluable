@@ -5,6 +5,14 @@ import { ArrowLeft } from "lucide-react";
 export const metadata = {
   title: "Terms of Service",
   description: "Terms of Service for BloxFruitValuable.com",
+  alternates: {
+    canonical: "/terms",
+  },
+  openGraph: {
+    title: "Terms of Service | BloxFruitValuable",
+    description: "Terms of Service for BloxFruitValuable.com",
+    url: "https://www.bloxfruitvaluable.com/terms",
+  },
 };
 
 export default function TermsOfServicePage() {

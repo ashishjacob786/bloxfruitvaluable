@@ -129,6 +129,42 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "SoftwareApplication",
+                "name": "Blox Fruit Valuable Calculator",
+                "applicationCategory": "GameApplication",
+                "operatingSystem": "Web",
+                "url": "https://www.bloxfruitvaluable.com/calculator",
+                "description": "Calculate win, fair, or loss for your Blox Fruits trades in real-time.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD"
+                }
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": faqs.map((faq) => ({
+                  "@type": "Question",
+                  "name": faq.q,
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq.a,
+                  },
+                })),
+              }
+            ]
+          }),
+        }}
+      />
       
     </div>
   );

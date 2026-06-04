@@ -3,10 +3,13 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blox Fruits Value List | Real-Time Live Tier List",
   description: "Check the exact, up-to-date trading values for every Fruit, Gamepass, and Scroll in Blox Fruits. Filter by physical or permanent value.",
+  alternates: {
+    canonical: "/values-list",
+  },
   openGraph: {
     title: "Blox Fruits Value List | Real-Time Live Tier List",
     description: "Check the exact, up-to-date trading values for every Fruit, Gamepass, and Scroll in Blox Fruits.",
-    url: "https://bloxfruitvaluable.com/values-list",
+    url: "https://www.bloxfruitvaluable.com/values-list",
   },
 };
 

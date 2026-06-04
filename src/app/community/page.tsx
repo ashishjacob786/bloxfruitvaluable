@@ -273,7 +273,14 @@ export default function CommunityPage() {
         <h1 className="text-3xl font-black text-gray-900 dark:text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">
           Real-Time <span className="text-blue-500">Community</span> <span className="text-xl text-gray-600 dark:text-gray-400 font-bold ml-2 hidden sm:inline-block">| BloxFruitValuable.com</span>
         </h1>
-        <p className="text-sm text-gray-600 dark:text-gray-400">Join a topic and chat with other players safely!</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">Join a topic and chat with other players safely!</p>
+        
+        {/* SEO Text Expansion for Thin Content Issue */}
+        <div className="max-w-2xl text-center hidden md:block">
+          <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
+            Welcome to the official <strong>Blox Fruits Community Chat</strong>! Discuss the latest update, ask for W/F/L (Win, Fair, Loss) advice on your trades, or participate in fruit giveaways. Connect with other Roblox players in real-time, share your best loadouts, and get direct support from the BloxFruitValuable admin team. Please follow the rules and do not spam links!
+          </p>
+        </div>
       </div>
 
       <div className="flex-1 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl shadow-2xl flex overflow-hidden backdrop-blur-md max-w-5xl mx-auto w-full relative">

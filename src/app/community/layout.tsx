@@ -1,12 +1,15 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Community Chat | BloxFruitValuable",
+  title: "Community Chat",
   description: "Join the active Blox Fruits community chat. Discuss W/F/L, organize giveaways, and get admin support.",
+  alternates: {
+    canonical: "/community",
+  },
   openGraph: {
     title: "Community Chat | BloxFruitValuable",
     description: "Join the active Blox Fruits community chat.",
-    url: "https://bloxfruitvaluable.com/community",
+    url: "https://www.bloxfruitvaluable.com/community",
   },
 };
 

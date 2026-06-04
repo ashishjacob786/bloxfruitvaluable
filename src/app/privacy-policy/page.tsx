@@ -5,6 +5,14 @@ import { ArrowLeft } from "lucide-react";
 export const metadata = {
   title: "Privacy Policy",
   description: "Privacy Policy for BloxFruitValuable.com",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+  openGraph: {
+    title: "Privacy Policy | BloxFruitValuable",
+    description: "Privacy Policy for BloxFruitValuable.com",
+    url: "https://www.bloxfruitvaluable.com/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicyPage() {
