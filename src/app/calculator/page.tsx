@@ -38,6 +38,26 @@ export default function CalculatorPage() {
           A trade is considered a <strong>Win (W)</strong> if the value you receive is higher than what you give. A <strong>Fair (F)</strong> trade means both sides are within a 5% margin of each other, ensuring neither player is getting scammed. A <strong>Loss (L)</strong> indicates you are overpaying. Use this tool before every major trade to secure the best deals!
         </p>
       </div>
+      {/* Structured Data for SEO: SoftwareApplication */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Blox Fruits Trade Calculator",
+            "operatingSystem": "Web Browser",
+            "applicationCategory": "GameApplication",
+            "url": "https://www.bloxfruitvaluable.com/calculator",
+            "description": "Calculate win, fair, or loss for your Blox Fruits trades in real-time based on market demands.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          }),
+        }}
+      />
     </div>
   );
 }
