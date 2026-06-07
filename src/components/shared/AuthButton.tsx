@@ -2,11 +2,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { LogOut } from "lucide-react";
 import { signOut } from "next-auth/react";
 
 export default function AuthButton({ user }: { user: any }) {
   const [isOpen, setIsOpen] = useState(false);
+
+  const pathname = usePathname();
 
   const handleLogout = async () => {
     await signOut({ callbackUrl: "/" });
@@ -14,7 +17,7 @@ export default function AuthButton({ user }: { user: any }) {
 
   if (!user) {
     return (
-      <Link href="/login" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-500 bg-blue-600 text-gray-900 dark:text-white hover:bg-blue-600/90 h-9 px-4 py-2 shadow-[0_0_15px_rgba(37,99,235,0.3)]">
+      <Link href={`/login?callbackUrl=${pathname}`} className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-500 bg-blue-600 text-gray-900 dark:text-white hover:bg-blue-600/90 h-9 px-4 py-2 shadow-[0_0_15px_rgba(37,99,235,0.3)]">
         Login
       </Link>
     );

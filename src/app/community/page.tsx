@@ -472,10 +472,10 @@ export default function CommunityPage() {
             )}
 
             {!user ? (
-              <div className="flex flex-col items-center justify-center p-4">
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">You must be logged in to chat.</p>
-                <Link href="/login" className="inline-flex items-center px-4 py-2 rounded-full bg-blue-600 hover:bg-blue-500 text-gray-900 dark:text-white font-bold text-sm transition shadow-[0_0_15px_rgba(37,99,235,0.4)]">
-                  <LogIn className="w-4 h-4 mr-2" /> Login with Roblox
+              <div className="bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 p-6 rounded-2xl text-center shadow-lg">
+                <p className="text-gray-900 dark:text-white font-medium mb-4">You must be logged in to participate in the chat.</p>
+                <Link href="/login?callbackUrl=/community" className="inline-flex items-center px-4 py-2 rounded-full bg-blue-600 hover:bg-blue-500 text-gray-900 dark:text-white font-bold text-sm transition shadow-[0_0_15px_rgba(37,99,235,0.4)]">
+                  Login to Chat
                 </Link>
               </div>
             ) : (

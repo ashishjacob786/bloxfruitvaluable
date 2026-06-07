@@ -93,11 +93,11 @@ export default function CreateTradeAdPage() {
 
   if (!user) {
     return (
-      <div className="container mx-auto px-4 py-16 max-w-4xl flex flex-col items-center text-center">
-        <h1 className="text-4xl font-black text-gray-900 dark:text-white mb-4">Login Required</h1>
-        <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-md">You must be logged in with your Roblox account to create a trade ad. This prevents spam and keeps our trading community safe.</p>
-        <Link href="/login" className="bg-blue-600 hover:bg-blue-500 text-gray-900 dark:text-white font-bold py-3 px-8 rounded-xl flex items-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all hover:scale-105">
-          <LogIn className="w-5 h-5" /> Login with Roblox
+      <div className="container mx-auto px-4 py-16 max-w-4xl flex flex-col items-center justify-center min-h-[60vh] text-center">
+        <h1 className="text-3xl font-black text-gray-900 dark:text-white mb-4">Login Required</h1>
+        <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-md">You must be logged in to create a trade advertisement.</p>
+        <Link href="/login?callbackUrl=/trading/new" className="bg-blue-600 hover:bg-blue-500 text-gray-900 dark:text-white font-bold py-3 px-8 rounded-xl flex items-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all hover:scale-105">
+          <LogIn className="w-5 h-5" /> Login to Continue
         </Link>
       </div>
     );
