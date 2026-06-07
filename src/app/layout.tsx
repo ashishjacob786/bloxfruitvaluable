@@ -21,22 +21,22 @@ export const metadata: Metadata = {
   },
   title: {
     template: "%s | Blox Fruits Value",
-    default: "Blox Fruits Value | Real-Time Trades & Calculator | BloxFruitValuable",
+    default: "Blox Fruits Value | Real-Time Trades & Calculator | BloxFruitValue",
   },
   description: "Discover real-time values, create trade ads, and calculate W/F/L trades with our smart calculator for Blox Fruits.",
   keywords: ["blox fruits values", "blox fruits trading", "roblox blox fruits", "blox fruits calculator", "blox fruit tier list"],
-  authors: [{ name: "BloxFruitValuable" }],
+  authors: [{ name: "BloxFruitValue" }],
   openGraph: {
-    title: "Blox Fruit Valuable | Real-Time Trades & Calculator",
+    title: "Blox Fruit Value | Real-Time Trades & Calculator",
     description: "Discover real-time values, create trade ads, and calculate W/F/L trades for Blox Fruits.",
     url: "https://www.bloxfruitvaluable.com",
-    siteName: "BloxFruitValuable",
+    siteName: "BloxFruitValue",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Blox Fruit Valuable Preview",
+        alt: "Blox Fruit Value Preview",
       },
     ],
     locale: "en_US",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blox Fruit Valuable | Real-Time Trades & Calculator",
+    title: "Blox Fruit Value | Real-Time Trades & Calculator",
     description: "Discover real-time values and calculate trades for Blox Fruits.",
     images: ["/og-image.jpg"],
   },

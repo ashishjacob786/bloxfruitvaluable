@@ -13,7 +13,7 @@ export default function Footer() {
             . All Rights Reserved. The ultimate hub for Blox Fruits trading.
           </p>
           <p className="text-[10px] md:text-xs text-center md:text-left opacity-70">
-            <strong>Disclaimer:</strong> BloxFruitValuable is a community-created tool and is not affiliated with, endorsed, sponsored, or specifically approved by Roblox Corporation or the creators of Blox Fruits. "Roblox" and "Blox Fruits" are trademarks of their respective owners.
+            <strong>Disclaimer:</strong> BloxFruitValue is a community-created tool and is not affiliated with, endorsed, sponsored, or specifically approved by Roblox Corporation or the creators of Blox Fruits. "Roblox" and "Blox Fruits" are trademarks of their respective owners.
           </p>
         </div>
         <div className="flex items-center space-x-4 text-sm text-foreground/60 mt-4 md:mt-0">

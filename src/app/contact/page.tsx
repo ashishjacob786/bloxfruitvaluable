@@ -4,13 +4,13 @@ import { ArrowLeft, Bug, TrendingUp, Briefcase, Mail, MessageCircle, AlertTriang
 
 export const metadata = {
   title: "Contact Us",
-  description: "Get in touch with the BloxFruitValuable team for support, bug reports, and business inquiries.",
+  description: "Get in touch with the BloxFruitValue team for support, bug reports, and business inquiries.",
   alternates: {
     canonical: "https://www.bloxfruitvaluable.com/contact",
   },
   openGraph: {
-    title: "Contact Us | BloxFruitValuable",
-    description: "Get in touch with the BloxFruitValuable team for support, bug reports, and business inquiries.",
+    title: "Contact Us | BloxFruitValue",
+    description: "Get in touch with the BloxFruitValue team for support, bug reports, and business inquiries.",
     url: "https://www.bloxfruitvaluable.com/contact",
   },
 };
@@ -27,7 +27,7 @@ export default function ContactUsPage() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white tracking-tight mb-4">Contact Us</h1>
             <p className="text-xl text-blue-400 font-medium max-w-2xl mx-auto">
-              We'd love to hear from you! Whether you have a question about a specific fruit's value, found a bug on the website, or want to discuss a business partnership, the Blox Fruit Valuable team is always here to help.
+              We'd love to hear from you! Whether you have a question about a specific fruit's value, found a bug on the website, or want to discuss a business partnership, the Blox Fruit Value team is always here to help.
             </p>
           </div>
 

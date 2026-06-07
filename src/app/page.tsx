@@ -3,35 +3,35 @@ import { ArrowRight, TrendingUp, Calculator, ShieldCheck, Users } from "lucide-r
 
 const faqs = [
   {
-    q: "What makes Blox Fruit Valuable the most accurate value list?",
-    a: "Blox Fruit Valuable is designed to be the ultimate companion for Blox Fruits players. Unlike outdated static lists, our platform uses real-time market data to determine the true trading value of fruits, gamepasses, scrolls, and exclusive items. We constantly monitor community trades to ensure our values are the most accurate on the internet."
+    q: "What makes Blox Fruit Value the most accurate value list?",
+    a: "Blox Fruit Value is designed to be the ultimate companion for Blox Fruits players. Unlike outdated static lists, our platform uses real-time market data to determine the true trading value of fruits, gamepasses, scrolls, and exclusive items. We constantly monitor community trades to ensure our values are the most accurate on the internet."
   },
   {
     q: "How often are the trading values updated on BloxFruitValuable.com?",
-    a: "Our values are updated live! The Blox Fruits trading market changes rapidly with every game update or new awakening. Blox Fruit Valuable tracks these market shifts in real-time, adjusting the \"Value\" and \"Demand\" metrics instantly so you never take an \"L\" (Loss) on a trade."
+    a: "Our values are updated live! The Blox Fruits trading market changes rapidly with every game update or new awakening. Blox Fruit Value tracks these market shifts in real-time, adjusting the \"Value\" and \"Demand\" metrics instantly so you never take an \"L\" (Loss) on a trade."
   },
   {
     q: "What do the \"Value\" (e.g., 14.58B) and \"Demand\" (10/10) numbers mean?",
-    a: "On Blox Fruit Valuable, the 'Value' represents the current economic worth of an item in the trading community (often measured in Millions or Billions). The 'Demand' score shows how actively players are searching for that item. A fruit with a 10/10 demand means it is highly sought after, making it incredibly easy to trade—often resulting in massive overpays!"
+    a: "On Blox Fruit Value, the 'Value' represents the current economic worth of an item in the trading community (often measured in Millions or Billions). The 'Demand' score shows how actively players are searching for that item. A fruit with a 10/10 demand means it is highly sought after, making it incredibly easy to trade—often resulting in massive overpays!"
   },
   {
-    q: "How do I use the Blox Fruit Valuable Calculator?",
-    a: "Our built-in Blox Fruit Valuable Calculator takes the guesswork out of trading. Simply select the fruits or gamepasses you are offering, and add the items the other player is offering. Our calculator will instantly compare the real-time values and tell you if the trade is a \"W\" (Win), \"F\" (Fair), or \"L\" (Loss)."
+    q: "How do I use the Blox Fruit Value Calculator?",
+    a: "Our built-in Blox Fruit Value Calculator takes the guesswork out of trading. Simply select the fruits or gamepasses you are offering, and add the items the other player is offering. Our calculator will instantly compare the real-time values and tell you if the trade is a \"W\" (Win), \"F\" (Fair), or \"L\" (Loss)."
   },
   {
-    q: "Does Blox Fruit Valuable track Limiteds and Exclusive items?",
+    q: "Does Blox Fruit Value track Limiteds and Exclusive items?",
     a: "Yes, absolutely! We don't just track standard fruits. Our platform has dedicated sections for Gamepasses and highly sought-after Limiteds (like the Galaxy Empyrean Kitsune or Crimson Kitsune). You can use our category filters or the search bar to find exactly what you need."
   },
   {
     q: "What does the 'Trend' indicator show on the item cards?",
-    a: "The Trend indicator (the small green or red arrows) on Blox Fruit Valuable helps you predict the market. An upward green trend means an item is gaining popularity and its trading value is rising. This is crucial information for traders looking to hold onto items as investments!"
+    a: "The Trend indicator (the small green or red arrows) on Blox Fruit Value helps you predict the market. An upward green trend means an item is gaining popularity and its trading value is rising. This is crucial information for traders looking to hold onto items as investments!"
   },
   {
     q: "How can I find good trades using the Trading Hub?",
     a: "The Trading Hub on BloxFruitValuable.com connects you directly with a massive community of active players. Once you check an item's worth on our value list, you can head over to the Trading Hub or our Community section to post your offers, find specific fruits, and negotiate deals safely."
   },
   {
-    q: "Is Blox Fruit Valuable completely free to use?",
+    q: "Is Blox Fruit Value completely free to use?",
     a: "Yes! Our mission is to protect the Blox Fruits community from bad trades and scams. Access to the real-time value list, the trading calculator, and our community features is completely free for all players."
   }
 ];
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-black mb-6 text-gray-900 dark:text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] tracking-tighter leading-tight">
-            Blox Fruit <span className="text-blue-500">Valuable</span> <span className="text-2xl md:text-4xl text-gray-600 dark:text-gray-400 font-bold ml-2 hidden sm:inline-block">| BloxFruitValuable.com</span>
+            Blox Fruit <span className="text-blue-500">Value</span>
           </h1>
           
           <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto text-lg md:text-xl mb-10 leading-relaxed">
@@ -101,7 +101,7 @@ export default function Home() {
       <section className="container mx-auto px-4 py-24 max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-4 tracking-tight">Frequently Asked Questions</h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg">Everything you need to know about Blox Fruit Valuable.</p>
+          <p className="text-gray-600 dark:text-gray-400 text-lg">Everything you need to know about Blox Fruit Value.</p>
         </div>
         
         <div className="space-y-6">
@@ -138,7 +138,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
-            "name": "Blox Fruit Valuable Calculator",
+            "name": "Blox Fruit Value Calculator",
             "applicationCategory": "GameApplication",
             "operatingSystem": "Web",
             "url": "https://www.bloxfruitvaluable.com/calculator",

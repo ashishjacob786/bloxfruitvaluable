@@ -271,18 +271,19 @@ export default function CommunityPage() {
     <div className="container mx-auto px-4 py-8 h-[calc(100vh-64px)] flex flex-col">
       <div className="flex flex-col items-center mb-6">
         <h1 className="text-3xl font-black text-gray-900 dark:text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-          Real-Time <span className="text-blue-500">Community</span> <span className="text-xl text-gray-600 dark:text-gray-400 font-bold ml-2 hidden sm:inline-block">| BloxFruitValuable.com</span>
+          Real-Time <span className="text-blue-500">Community</span>
         </h1>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">Join a topic and chat with other players safely!</p>
         
         {/* SEO Text Expansion for Thin Content Issue */}
-        <div className="max-w-3xl text-center px-4 md:px-0 mt-4 mb-2">
-          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+        <details className="max-w-3xl text-center px-4 md:px-0 mt-2 mb-4 group cursor-pointer">
+          <summary className="text-xs font-bold text-blue-500 hover:text-blue-400 list-none">Read Community Rules & Info</summary>
+          <div className="mt-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-left bg-gray-100 dark:bg-white/5 p-4 rounded-xl border border-gray-200 dark:border-white/10">
             Welcome to the official <strong className="text-gray-900 dark:text-white">Blox Fruits Value Community Chat</strong>! Connect with thousands of other players to discuss real-time trading values, find the best fruit trades, and share your massive W/F/L wins. Whether you are a seasoned bounty hunter looking for permanent fruit trades or a new player figuring out the physical trading tier list, this is your home. 
             <br /><br />
             <strong className="text-gray-900 dark:text-white">Community Rules:</strong> No spamming, no begging, and no scam links. Keep discussions related to Blox Fruits trading values and gameplay. Our moderation team actively monitors the chat to ensure a safe environment for everyone. Click a topic below to join the conversation and master the Blox Fruits economy!
-          </p>
-        </div>
+          </div>
+        </details>
       </div>
 
       <div className="flex-1 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl shadow-2xl flex overflow-hidden backdrop-blur-md max-w-5xl mx-auto w-full relative">
@@ -539,11 +540,11 @@ export default function CommunityPage() {
             "description": "Join the active Blox Fruits community chat. Discuss W/F/L, organize giveaways, and get admin support.",
             "author": {
               "@type": "Organization",
-              "name": "BloxFruitValuable"
+              "name": "BloxFruitValue"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "BloxFruitValuable"
+              "name": "BloxFruitValue"
             }
           })
         }}

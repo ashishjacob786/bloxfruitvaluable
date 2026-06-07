@@ -9,7 +9,7 @@ export const metadata = {
     canonical: "https://www.bloxfruitvaluable.com/terms",
   },
   openGraph: {
-    title: "Terms of Service | BloxFruitValuable",
+    title: "Terms of Service | BloxFruitValue",
     description: "Terms of Service for BloxFruitValuable.com",
     url: "https://www.bloxfruitvaluable.com/terms",
   },
@@ -30,7 +30,7 @@ export default function TermsOfServicePage() {
           <div className="space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
             <section>
               <p>
-                Welcome to Blox Fruit Valuable (accessible at bloxfruitvaluable.com). These Terms of Service ("Terms") govern your access to and use of our website, real-time value lists, calculators, and community chat features.
+                Welcome to Blox Fruit Value (accessible at bloxfruitvaluable.com). These Terms of Service ("Terms") govern your access to and use of our website, real-time value lists, calculators, and community chat features.
               </p>
               <p className="mt-4">
                 By accessing or using our website, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the service.
@@ -40,10 +40,10 @@ export default function TermsOfServicePage() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">1. Description of Service and Disclaimer of Affiliation</h2>
               <p className="mb-4">
-                Blox Fruit Valuable is an independent, community-driven platform designed to provide estimated trading values, tools, and a community hub for players of the Roblox game "Blox Fruits."
+                Blox Fruit Value is an independent, community-driven platform designed to provide estimated trading values, tools, and a community hub for players of the Roblox game "Blox Fruits."
               </p>
               <div className="bg-red-900/20 border border-red-500/20 rounded-xl p-4 text-sm text-red-200">
-                <strong className="text-red-400">Disclaimer:</strong> Blox Fruit Valuable is a third-party service. We are NOT affiliated, associated, authorized, endorsed by, or in any way officially connected with Roblox Corporation, Gamer Robot Inc. (the creators of Blox Fruits), or any of their subsidiaries or affiliates. All Roblox and Blox Fruits names, marks, emblems, and images are registered trademarks of their respective owners.
+                <strong className="text-red-400">Disclaimer:</strong> Blox Fruit Value is a third-party service. We are NOT affiliated, associated, authorized, endorsed by, or in any way officially connected with Roblox Corporation, Gamer Robot Inc. (the creators of Blox Fruits), or any of their subsidiaries or affiliates. All Roblox and Blox Fruits names, marks, emblems, and images are registered trademarks of their respective owners.
               </div>
             </section>
 
@@ -53,7 +53,7 @@ export default function TermsOfServicePage() {
               <ul className="list-disc pl-6 space-y-4 text-gray-600 dark:text-gray-400">
                 <li>You are solely responsible for maintaining the confidentiality of your Roblox account.</li>
                 <li>We use official Roblox authentication and <strong className="text-gray-200">do not ask for, nor do we store, your Roblox account password</strong>.</li>
-                <li>We reserve the right to suspend or terminate your access to Blox Fruit Valuable at our sole discretion, without notice, for conduct that we believe violates these Terms or is harmful to other users.</li>
+                <li>We reserve the right to suspend or terminate your access to Blox Fruit Value at our sole discretion, without notice, for conduct that we believe violates these Terms or is harmful to other users.</li>
               </ul>
             </section>
 
@@ -73,7 +73,7 @@ export default function TermsOfServicePage() {
 
             <section>
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">4. Accuracy of Trading Values</h2>
-              <p className="mb-4">The values and demand ratings displayed on Blox Fruit Valuable are estimates based on real-time community trends, market analysis, and user feedback.</p>
+              <p className="mb-4">The values and demand ratings displayed on Blox Fruit Value are estimates based on real-time community trends, market analysis, and user feedback.</p>
               <ul className="list-disc pl-6 space-y-4 text-gray-600 dark:text-gray-400">
                 <li>These values are meant to serve as a guide, not a guarantee.</li>
                 <li>The Blox Fruits trading market is highly volatile. <strong className="text-gray-200">We are not responsible for any in-game trading losses, bad deals ("L's"), or disputes between players</strong> that occur as a result of using our value list or calculator. All trades are made at your own risk.</li>
@@ -83,7 +83,7 @@ export default function TermsOfServicePage() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">5. Advertisements and Third-Party Links</h2>
               <ul className="list-disc pl-6 space-y-4 text-gray-600 dark:text-gray-400">
-                <li>Our website uses third-party advertising services (such as Google AdSense) and may contain sponsored links or links to third-party websites that are not owned or controlled by Blox Fruit Valuable.</li>
+                <li>Our website uses third-party advertising services (such as Google AdSense) and may contain sponsored links or links to third-party websites that are not owned or controlled by Blox Fruit Value.</li>
                 <li>We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.</li>
                 <li>Your interactions with advertisers found on our platform are solely between you and the advertiser.</li>
               </ul>
@@ -92,14 +92,14 @@ export default function TermsOfServicePage() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">6. Intellectual Property</h2>
               <p>
-                Excluding the assets and trademarks owned by Roblox Corporation and Gamer Robot Inc., the original design, code, calculators, UI layout, and text on this website are the intellectual property of Blox Fruit Valuable. You may not copy, modify, distribute, or reproduce our proprietary code or design without our prior written consent.
+                Excluding the assets and trademarks owned by Roblox Corporation and Gamer Robot Inc., the original design, code, calculators, UI layout, and text on this website are the intellectual property of Blox Fruit Value. You may not copy, modify, distribute, or reproduce our proprietary code or design without our prior written consent.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">7. Limitation of Liability</h2>
               <p>
-                In no event shall Blox Fruit Valuable, its admin, or its developers be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of data, loss of in-game items, or other intangible losses, resulting from your access to or use of, or inability to access or use, the Service.
+                In no event shall Blox Fruit Value, its admin, or its developers be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of data, loss of in-game items, or other intangible losses, resulting from your access to or use of, or inability to access or use, the Service.
               </p>
             </section>
 

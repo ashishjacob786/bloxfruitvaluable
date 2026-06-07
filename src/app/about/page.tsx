@@ -9,7 +9,7 @@ export const metadata = {
     canonical: "https://www.bloxfruitvaluable.com/about",
   },
   openGraph: {
-    title: "About Us | BloxFruitValuable",
+    title: "About Us | BloxFruitValue",
     description: "Learn about the mission and team behind BloxFruitValuable.com",
     url: "https://www.bloxfruitvaluable.com/about",
   },
@@ -27,7 +27,7 @@ export default function AboutUsPage() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white tracking-tight mb-4">About Us</h1>
             <p className="text-xl text-blue-400 font-medium">
-              Welcome to Blox Fruit Valuable (bloxfruitvaluable.com)—the most trusted, real-time trading companion for the Blox Fruits community.
+              Welcome to Blox Fruit Value (bloxfruitvaluable.com)—the most trusted, real-time trading companion for the Blox Fruits community.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export default function AboutUsPage() {
                   Trading in Blox Fruits is incredibly exciting, but it can also be frustrating. Between outdated static value lists, market manipulation, and the constant fear of taking an "L" (Loss) on a trade, players needed a reliable source of truth.
                 </p>
                 <p>
-                  That's exactly why Blox Fruit Valuable was created. Our mission is simple: to <strong className="text-gray-900 dark:text-white">protect the Blox Fruits community from bad trades and scams</strong> by providing the fastest, most accurate, and most user-friendly trading tools on the internet.
+                  That's exactly why Blox Fruit Value was created. Our mission is simple: to <strong className="text-gray-900 dark:text-white">protect the Blox Fruits community from bad trades and scams</strong> by providing the fastest, most accurate, and most user-friendly trading tools on the internet.
                 </p>
               </div>
             </section>
@@ -55,7 +55,7 @@ export default function AboutUsPage() {
                 <Users className="w-8 h-8 text-blue-400" /> Who We Are
               </h2>
               <p className="mb-4">
-                We aren't just another generic gaming blog. Blox Fruit Valuable is built by a passionate team of professional developers and digital tool creators who understand both modern web technology and the complex economy of Blox Fruits.
+                We aren't just another generic gaming blog. Blox Fruit Value is built by a passionate team of professional developers and digital tool creators who understand both modern web technology and the complex economy of Blox Fruits.
               </p>
               <div className="grid md:grid-cols-2 gap-4 mt-6 mb-4">
                 <div className="bg-white dark:bg-black/40 border border-gray-200 dark:border-white/10 p-4 rounded-xl flex items-center gap-4">
@@ -115,7 +115,7 @@ export default function AboutUsPage() {
             <section className="bg-gradient-to-r from-blue-600/20 to-indigo-600/20 border border-blue-500/30 rounded-3xl p-8 text-center mt-12">
               <h2 className="text-3xl font-black text-gray-900 dark:text-white mb-4">Join the Community</h2>
               <p className="mb-6 max-w-2xl mx-auto">
-                Blox Fruit Valuable is more than just a website; it's a growing community of smart traders. We are constantly updating our platform, adding new features, and squashing bugs to give you the best experience possible.
+                Blox Fruit Value is more than just a website; it's a growing community of smart traders. We are constantly updating our platform, adding new features, and squashing bugs to give you the best experience possible.
               </p>
               
               <div className="mb-8">
@@ -130,7 +130,7 @@ export default function AboutUsPage() {
                 Trade smart, stay safe, and secure those W's!
               </p>
               <p className="mt-4 font-medium text-gray-600 dark:text-gray-400">
-                — The Blox Fruit Valuable Team
+                — The Blox Fruit Value Team
               </p>
             </section>
           </div>

@@ -110,7 +110,7 @@ export default function CreateTradeAdPage() {
       </Link>
 
       <div className="mb-8">
-        <h1 className="text-3xl font-black text-gray-900 dark:text-white mb-2">Create Trade Ad <span className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-bold ml-2 hidden sm:inline-block">| BloxFruitValuable.com</span></h1>
+        <h1 className="text-3xl font-black text-gray-900 dark:text-white mb-2">Create Trade Ad</h1>
         <p className="text-muted-foreground">Post your trade offer to the community.</p>
       </div>
 

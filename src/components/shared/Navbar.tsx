@@ -21,15 +21,12 @@ export default async function Navbar() {
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <img 
             src="/Official_logo.png" 
-            alt="Blox Fruit Valuable Logo" 
+            alt="Blox Fruit Value Logo" 
             className="h-10 w-10 object-contain drop-shadow-[0_0_10px_rgba(37,99,235,0.5)]" 
           />
           <span className="hidden sm:inline-flex flex-col ml-1">
             <span className="font-bold text-xl tracking-tight leading-none">
-              Blox Fruit <span className="text-blue-500">Valuable</span>
-            </span>
-            <span className="text-[10px] text-gray-500 dark:text-gray-400 font-medium tracking-wide uppercase leading-none mt-0.5">
-              Blox Fruits Value
+              Blox Fruit <span className="text-blue-500">Value</span>
             </span>
           </span>
         </Link>

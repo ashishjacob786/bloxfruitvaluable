@@ -68,7 +68,7 @@ export default async function TradingHubPage() {
             "description": "Post your trades and find the perfect offer for your Blox Fruits. Match with active players in real-time.",
             "publisher": {
               "@type": "Organization",
-              "name": "BloxFruitValuable"
+              "name": "BloxFruitValue"
             }
           })
         }}

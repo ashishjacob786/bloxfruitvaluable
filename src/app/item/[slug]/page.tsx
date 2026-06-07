@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title,
       description,
       url: `https://bloxfruitvaluable.com/item/${item.slug}`,
-      siteName: "BloxFruitValuable",
+      siteName: "BloxFruitValue",
       images: [
         {
           url: item.imageUrl,

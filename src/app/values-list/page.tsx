@@ -42,12 +42,10 @@ export default function ValuesListPage() {
     <div className="container mx-auto px-4 py-12 min-h-screen">
       <div className="text-center mb-10 flex flex-col items-center">
         <h1 className="text-4xl md:text-5xl font-black mb-4 text-gray-900 dark:text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] tracking-tighter">
-          Blox Fruits <span className="text-blue-500">Value List</span> <span className="text-xl md:text-3xl text-gray-600 dark:text-gray-400 font-bold ml-2 hidden sm:inline-block">| BloxFruitValuable.com</span>
+          Blox Fruits <span className="text-blue-500">Value List</span>
         </h1>
-        <p className="text-muted-foreground max-w-3xl mx-auto text-sm md:text-base leading-relaxed">
-          Welcome to the ultimate <strong className="text-gray-900 dark:text-white">Blox Fruits Value</strong> list for {new Date().getFullYear()}! This page is your live trading companion, featuring up-to-the-minute values for every physical fruit, permanent fruit, gamepass, and limited item in the game. Understanding <strong className="text-gray-900 dark:text-white">Blox Fruits value</strong> is essential before making any trade to ensure you never take an L (Loss). We calculate our values based on massive community polls, live trading hub data, and discord server transactions. 
-          <br /><br />
-          Whether you are comparing the <strong className="text-gray-900 dark:text-white">physical vs permanent value</strong> of a Leopard fruit, or trying to figure out if your offer is a W/F/L (Win, Fair, Loss), our tier list provides the exact numbers you need. All our data is <strong className="text-green-500">updated daily</strong>. Use the buttons below to switch between regular (physical) trading values and permanent (Robux) values, and master the Blox Fruits economy today!
+        <p className="text-muted-foreground max-w-xl mx-auto text-sm">
+          The most accurate, real-time trading values for all Blox Fruits items.
         </p>
       </div>
 
@@ -173,6 +171,13 @@ export default function ValuesListPage() {
       </div>
 
       <div className="mt-16 max-w-4xl mx-auto mb-12">
+        <div className="mb-12 text-center">
+          <p className="text-muted-foreground max-w-3xl mx-auto text-sm md:text-base leading-relaxed">
+            Welcome to the ultimate <strong className="text-gray-900 dark:text-white">Blox Fruits Value</strong> list for {new Date().getFullYear()}! This page is your live trading companion, featuring up-to-the-minute values for every physical fruit, permanent fruit, gamepass, and limited item in the game. Understanding <strong className="text-gray-900 dark:text-white">Blox Fruits value</strong> is essential before making any trade to ensure you never take an L (Loss). We calculate our values based on massive community polls, live trading hub data, and discord server transactions. 
+            <br /><br />
+            Whether you are comparing the <strong className="text-gray-900 dark:text-white">physical vs permanent value</strong> of a Leopard fruit, or trying to figure out if your offer is a W/F/L (Win, Fair, Loss), our tier list provides the exact numbers you need. All our data is <strong className="text-green-500">updated daily</strong>. Use the buttons below to switch between regular (physical) trading values and permanent (Robux) values, and master the Blox Fruits economy today!
+          </p>
+        </div>
         <h2 className="text-3xl font-black text-center text-gray-900 dark:text-white mb-8">Blox Fruits Value FAQs</h2>
         <div className="space-y-4">
           <div className="bg-gray-50 dark:bg-[#0a0a0f]/50 p-6 rounded-2xl border border-gray-200 dark:border-white/5">

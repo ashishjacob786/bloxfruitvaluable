@@ -141,18 +141,18 @@ export default function TradingHubClient({ initialTrades }: { initialTrades: any
     <div className="container mx-auto px-4 py-8 max-w-5xl">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
         <div>
-          <h1 className="text-4xl font-black text-gray-900 dark:text-white mb-2">Active Trade Ads <span className="text-xl md:text-3xl text-gray-600 dark:text-gray-400 font-bold ml-2 hidden sm:inline-block">| BloxFruitValuable.com</span></h1>
+          <h1 className="text-4xl font-black text-gray-900 dark:text-white mb-2">Active Trade Ads</h1>
           <p className="text-muted-foreground mb-4">Find the best trades from the community in real-time.</p>
           
           {/* SEO Text Expansion for Thin Content Issue */}
-          <div className="max-w-3xl mb-4">
-            <h2 className="text-sm md:text-lg font-bold text-gray-900 dark:text-white mb-2">Welcome to the Blox Fruits Value Trading Hub</h2>
-            <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-              Looking for a specific Blox fruit like the mythical Kitsune, Leopard, or Dragon? The <strong className="text-gray-900 dark:text-white">Blox Fruits Value</strong> Trading Hub connects you directly with thousands of active Roblox players looking to trade right now. Instead of server hopping for hours, browse our live trade advertisements to find massive W (Win) trades instantly. 
-              <br /><br />
-              <strong className="text-gray-900 dark:text-white">Trading Rules & Mechanics:</strong> All trades are verified using our real-time value calculator to show if an offer is a W, F, or L. Simply click the "Create Trade Ad" button to post your inventory and what you are looking for. Once you find a match, securely copy their Discord tag or Roblox Username to complete the deal in the actual game!
-            </p>
-          </div>
+          <details className="max-w-3xl mb-4 group cursor-pointer">
+             <summary className="text-xs font-bold text-blue-500 hover:text-blue-400 list-none mb-2">Read Trading Hub Rules & Info</summary>
+             <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed bg-gray-100 dark:bg-white/5 p-4 rounded-xl border border-gray-200 dark:border-white/10 mt-2">
+                Looking for a specific Blox fruit like the mythical Kitsune, Leopard, or Dragon? The <strong className="text-gray-900 dark:text-white">Blox Fruits Value</strong> Trading Hub connects you directly with thousands of active Roblox players looking to trade right now. Instead of server hopping for hours, browse our live trade advertisements to find massive W (Win) trades instantly. 
+                <br /><br />
+                <strong className="text-gray-900 dark:text-white">Trading Rules & Mechanics:</strong> All trades are verified using our real-time value calculator to show if an offer is a W, F, or L. Simply click the "Create Trade Ad" button to post your inventory and what you are looking for. Once you find a match, securely copy their Discord tag or Roblox Username to complete the deal in the actual game!
+             </div>
+          </details>
         </div>
         <Link 
           href="/trading/new" 

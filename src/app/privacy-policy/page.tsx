@@ -9,7 +9,7 @@ export const metadata = {
     canonical: "https://www.bloxfruitvaluable.com/privacy-policy",
   },
   openGraph: {
-    title: "Privacy Policy | BloxFruitValuable",
+    title: "Privacy Policy | BloxFruitValue",
     description: "Privacy Policy for BloxFruitValuable.com",
     url: "https://www.bloxfruitvaluable.com/privacy-policy",
   },
@@ -30,10 +30,10 @@ export default function PrivacyPolicyPage() {
           <div className="space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
             <section>
               <p>
-                Welcome to Blox Fruit Valuable (accessible at bloxfruitvaluable.com). Your privacy is critically important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, log in via Roblox, use our community chat, and interact with our services.
+                Welcome to Blox Fruit Value (accessible at bloxfruitvaluable.com). Your privacy is critically important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, log in via Roblox, use our community chat, and interact with our services.
               </p>
               <p className="mt-4">
-                By using Blox Fruit Valuable, you agree to the collection and use of information in accordance with this Privacy Policy.
+                By using Blox Fruit Value, you agree to the collection and use of information in accordance with this Privacy Policy.
               </p>
             </section>
 
