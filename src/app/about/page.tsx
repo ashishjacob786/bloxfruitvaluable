@@ -3,14 +3,14 @@ import Link from "next/link";
 import { ArrowLeft, Target, Users, Zap, Shield, HelpCircle, HeartHandshake } from "lucide-react";
 
 export const metadata = {
-  title: "About Us",
-  description: "Learn about the mission and team behind BloxFruitValuable.com",
+  title: "About Blox Fruit Value — Trusted Blox Fruits Trading Hub",
+  description: "Learn about the mission and team behind BloxFruitValue.com",
   alternates: {
     canonical: "https://www.bloxfruitvaluable.com/about",
   },
   openGraph: {
-    title: "About Us | BloxFruitValue",
-    description: "Learn about the mission and team behind BloxFruitValuable.com",
+    title: "About Blox Fruit Value — Trusted Blox Fruits Trading Hub",
+    description: "Learn about the mission and team behind BloxFruitValue.com",
     url: "https://www.bloxfruitvaluable.com/about",
   },
 };

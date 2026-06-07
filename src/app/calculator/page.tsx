@@ -2,13 +2,13 @@ import { Metadata } from "next";
 import TradeCalculator from "@/components/calculator/TradeCalculator";
 
 export const metadata: Metadata = {
-  title: "Trade Calculator",
+  title: "Blox Fruits Trade Calculator — W/F/L Checker",
   description: "Calculate win, fair, or loss for your Blox Fruits trades in real-time.",
   alternates: {
     canonical: "https://www.bloxfruitvaluable.com/calculator",
   },
   openGraph: {
-    title: "Trade Calculator",
+    title: "Blox Fruits Trade Calculator — W/F/L Checker",
     description: "Calculate win, fair, or loss for your Blox Fruits trades in real-time.",
     url: "https://www.bloxfruitvaluable.com/calculator",
   },

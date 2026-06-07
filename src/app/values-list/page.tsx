@@ -42,7 +42,7 @@ export default function ValuesListPage() {
     <div className="container mx-auto px-4 py-12 min-h-screen">
       <div className="text-center mb-10 flex flex-col items-center">
         <h1 className="text-4xl md:text-5xl font-black mb-4 text-gray-900 dark:text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] tracking-tighter">
-          Blox Fruits <span className="text-blue-500">Value List</span>
+          Blox Fruits <span className="text-blue-500">Value List</span> {new Date().getFullYear()} — Live Trading Prices
         </h1>
         <p className="text-muted-foreground max-w-xl mx-auto text-sm">
           The most accurate, real-time trading values for all Blox Fruits items.
