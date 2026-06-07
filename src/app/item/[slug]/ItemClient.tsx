@@ -159,7 +159,8 @@ export default function ItemClient({ item }: { item: any }) {
             <div className="bg-gray-50 dark:bg-[#0a0a0f]/50 border border-gray-200 dark:border-white/5 rounded-3xl p-8">
               <h3 className="text-xl font-black text-gray-900 dark:text-white mb-6">Expert Assessment</h3>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                The <strong className="text-gray-900 dark:text-white">{item.name}</strong> is {item.rarity === 'Mythical' ? 'an incredibly rare and prestigious' : item.rarity === 'Legendary' ? 'a highly valuable' : 'a well-known'} <strong className="text-blue-400">{item.rarity}</strong> tier item in Blox Fruits. 
+                {item.seoDescription || `The ${item.name} is a ${item.rarity} tier item in Blox Fruits.`}
+                <br /><br />
                 {item.demandScore >= 8 ? (
                   <span> With an outstanding community demand score of <strong className="text-green-400">{item.demand || "8/10"}</strong>, players are constantly searching for it in the Trading Hub.</span>
                 ) : item.demandScore >= 5 ? (

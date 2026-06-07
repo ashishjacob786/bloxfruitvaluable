@@ -24,8 +24,13 @@ export default async function Navbar() {
             alt="Blox Fruit Valuable Logo" 
             className="h-10 w-10 object-contain drop-shadow-[0_0_10px_rgba(37,99,235,0.5)]" 
           />
-          <span className="hidden font-bold sm:inline-block text-xl tracking-tight">
-            Blox Fruit <span className="text-blue-500">Valuable</span>
+          <span className="hidden sm:inline-flex flex-col ml-1">
+            <span className="font-bold text-xl tracking-tight leading-none">
+              Blox Fruit <span className="text-blue-500">Valuable</span>
+            </span>
+            <span className="text-[10px] text-gray-500 dark:text-gray-400 font-medium tracking-wide uppercase leading-none mt-0.5">
+              Blox Fruits Value
+            </span>
           </span>
         </Link>
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">

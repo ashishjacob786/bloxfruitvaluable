@@ -276,9 +276,11 @@ export default function CommunityPage() {
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">Join a topic and chat with other players safely!</p>
         
         {/* SEO Text Expansion for Thin Content Issue */}
-        <div className="max-w-2xl text-center px-4 md:px-0">
-          <p className="text-[10px] md:text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-            Welcome to the official <strong>Blox Fruits Community Chat</strong>! Discuss the latest update, ask for W/F/L (Win, Fair, Loss) advice on your trades, or participate in fruit giveaways. Connect with other Roblox players in real-time, share your best loadouts, and get direct support from the BloxFruitValuable admin team. Please follow the rules and do not spam links!
+        <div className="max-w-3xl text-center px-4 md:px-0 mt-4 mb-2">
+          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+            Welcome to the official <strong className="text-gray-900 dark:text-white">Blox Fruits Value Community Chat</strong>! Connect with thousands of other players to discuss real-time trading values, find the best fruit trades, and share your massive W/F/L wins. Whether you are a seasoned bounty hunter looking for permanent fruit trades or a new player figuring out the physical trading tier list, this is your home. 
+            <br /><br />
+            <strong className="text-gray-900 dark:text-white">Community Rules:</strong> No spamming, no begging, and no scam links. Keep discussions related to Blox Fruits trading values and gameplay. Our moderation team actively monitors the chat to ensure a safe environment for everyone. Click a topic below to join the conversation and master the Blox Fruits economy!
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     canonical: "https://www.bloxfruitvaluable.com/community",
   },
   openGraph: {
-    title: "Community Chat | BloxFruitValuable",
+    title: "Community Chat",
     description: "Join the active Blox Fruits community chat.",
     url: "https://www.bloxfruitvaluable.com/community",
   },

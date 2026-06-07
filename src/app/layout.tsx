@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     canonical: "https://www.bloxfruitvaluable.com/",
   },
   title: {
-    template: "%s | BloxFruitValuable.com",
-    default: "Blox Fruit Valuable | Real-Time Trades & Calculator",
+    template: "%s | Blox Fruits Value",
+    default: "Blox Fruits Value | Real-Time Trades & Calculator | BloxFruitValuable",
   },
   description: "Discover real-time values, create trade ads, and calculate W/F/L trades with our smart calculator for Blox Fruits.",
   keywords: ["blox fruits values", "blox fruits trading", "roblox blox fruits", "blox fruits calculator", "blox fruit tier list"],

@@ -44,8 +44,10 @@ export default function ValuesListPage() {
         <h1 className="text-4xl md:text-5xl font-black mb-4 text-gray-900 dark:text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] tracking-tighter">
           Blox Fruits <span className="text-blue-500">Value List</span> <span className="text-xl md:text-3xl text-gray-600 dark:text-gray-400 font-bold ml-2 hidden sm:inline-block">| BloxFruitValuable.com</span>
         </h1>
-        <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-          Complete, daily updated table of every item's physical trading value and market trend.
+        <p className="text-muted-foreground max-w-3xl mx-auto text-sm md:text-base leading-relaxed">
+          Welcome to the ultimate <strong className="text-gray-900 dark:text-white">Blox Fruits Value</strong> list for {new Date().getFullYear()}! This page is your live trading companion, featuring up-to-the-minute values for every physical fruit, permanent fruit, gamepass, and limited item in the game. Understanding <strong className="text-gray-900 dark:text-white">Blox Fruits value</strong> is essential before making any trade to ensure you never take an L (Loss). We calculate our values based on massive community polls, live trading hub data, and discord server transactions. 
+          <br /><br />
+          Whether you are comparing the <strong className="text-gray-900 dark:text-white">physical vs permanent value</strong> of a Leopard fruit, or trying to figure out if your offer is a W/F/L (Win, Fair, Loss), our tier list provides the exact numbers you need. All our data is <strong className="text-green-500">updated daily</strong>. Use the buttons below to switch between regular (physical) trading values and permanent (Robux) values, and master the Blox Fruits economy today!
         </p>
       </div>
 
@@ -170,6 +172,32 @@ export default function ValuesListPage() {
         </div>
       </div>
 
+      <div className="mt-16 max-w-4xl mx-auto mb-12">
+        <h2 className="text-3xl font-black text-center text-gray-900 dark:text-white mb-8">Blox Fruits Value FAQs</h2>
+        <div className="space-y-4">
+          <div className="bg-gray-50 dark:bg-[#0a0a0f]/50 p-6 rounded-2xl border border-gray-200 dark:border-white/5">
+            <h3 className="font-bold text-gray-900 dark:text-white mb-2">What is Blox Fruits value?</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Blox Fruits value refers to the current trading worth of fruits, gamepasses, and scrolls within the Roblox game. Because prices constantly shift based on player demand and game updates, a fruit's in-game Beli cost often does not match its actual trading value.</p>
+          </div>
+          <div className="bg-gray-50 dark:bg-[#0a0a0f]/50 p-6 rounded-2xl border border-gray-200 dark:border-white/5">
+            <h3 className="font-bold text-gray-900 dark:text-white mb-2">How are Blox Fruits values calculated?</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Our values are calculated by analyzing thousands of successful trades across massive Discord communities, in-game trading hubs, and community polls. We track both the raw worth and the "demand" score to ensure extreme accuracy.</p>
+          </div>
+          <div className="bg-gray-50 dark:bg-[#0a0a0f]/50 p-6 rounded-2xl border border-gray-200 dark:border-white/5">
+            <h3 className="font-bold text-gray-900 dark:text-white mb-2">What is the difference between physical vs permanent Blox Fruits value?</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">A "Physical" fruit is a one-time use item held in your inventory, whereas a "Permanent" fruit is bought with Robux and can be equipped at any time forever. Because they cost real money, Permanent fruits have significantly higher trading values than their physical counterparts.</p>
+          </div>
+          <div className="bg-gray-50 dark:bg-[#0a0a0f]/50 p-6 rounded-2xl border border-gray-200 dark:border-white/5">
+            <h3 className="font-bold text-gray-900 dark:text-white mb-2">Which Blox fruit has the highest value?</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Currently, mythical fruits like the Kitsune and Dragon hold the highest trading values in the game due to their extreme rarity, high demand, and powerful PvP/grinding capabilities. Check the top of our value list for the exact current rankings.</p>
+          </div>
+          <div className="bg-gray-50 dark:bg-[#0a0a0f]/50 p-6 rounded-2xl border border-gray-200 dark:border-white/5">
+            <h3 className="font-bold text-gray-900 dark:text-white mb-2">What does W/F/L mean in trading?</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">W/F/L stands for Win, Fair, Loss. A "W" means you received more value than you gave. An "F" means the trade was perfectly balanced. An "L" means you overpaid. Always check our list to avoid taking an L!</p>
+          </div>
+        </div>
+      </div>
+
       {/* Structured Data for SEO: ItemList */}
       <script
         type="application/ld+json"
@@ -186,6 +214,59 @@ export default function ValuesListPage() {
                 "name": item.name,
                 "url": `https://www.bloxfruitvaluable.com/item/${item.slug}`
               }))
+          }),
+        }}
+      />
+      
+      {/* Structured Data for SEO: FAQPage */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Blox Fruits value?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Blox Fruits value refers to the current trading worth of fruits, gamepasses, and scrolls within the Roblox game. Because prices constantly shift based on player demand and game updates, a fruit's in-game Beli cost often does not match its actual trading value."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How are Blox Fruits values calculated?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our values are calculated by analyzing thousands of successful trades across massive Discord communities, in-game trading hubs, and community polls. We track both the raw worth and the demand score to ensure extreme accuracy."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between physical vs permanent Blox Fruits value?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A Physical fruit is a one-time use item held in your inventory, whereas a Permanent fruit is bought with Robux and can be equipped at any time forever. Because they cost real money, Permanent fruits have significantly higher trading values than their physical counterparts."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which Blox fruit has the highest value?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Currently, mythical fruits like the Kitsune and Dragon hold the highest trading values in the game due to their extreme rarity, high demand, and powerful PvP/grinding capabilities. Check the top of our value list for the exact current rankings."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does W/F/L mean in trading?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "W/F/L stands for Win, Fair, Loss. A W means you received more value than you gave. An F means the trade was perfectly balanced. An L means you overpaid. Always check our list to avoid taking an L!"
+                }
+              }
+            ]
           }),
         }}
       />
