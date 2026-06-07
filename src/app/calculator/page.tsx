@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     canonical: "https://www.bloxfruitvaluable.com/calculator",
   },
   openGraph: {
-    title: "Trade Calculator | BloxFruitValuable.com",
+    title: "Trade Calculator",
     description: "Calculate win, fair, or loss for your Blox Fruits trades in real-time.",
     url: "https://www.bloxfruitvaluable.com/calculator",
   },

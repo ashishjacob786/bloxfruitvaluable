@@ -11,11 +11,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!item) {
     return {
-      title: "Item Not Found | BloxFruitValuable.com",
+      title: "Item Not Found | Blox Fruit Value",
     };
   }
 
-  const title = `${item.name} Value - Real Time Trades & Info | BloxFruitValuable.com`;
+  const title = `${item.name} Value - Real Time Trades & Info`;
   const description = `Live ${item.name} value is ${formatValue(item.currentTradingValue)}. Check out the latest trading trends, demand, and details for ${item.name} in Blox Fruits.`;
 
   return {
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title,
       description,
-      url: `https://bloxfruitvaluable.com/item/${item.slug}`,
+      url: `https://www.bloxfruitvaluable.com/item/${item.slug}`,
       siteName: "BloxFruitValue",
       images: [
         {
