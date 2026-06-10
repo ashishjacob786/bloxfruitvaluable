@@ -5,6 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
+      disallow: ['/login', '/api/auth/'],
     },
     sitemap: 'https://www.bloxfruitvaluable.com/sitemap.xml',
   };

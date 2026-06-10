@@ -24,9 +24,9 @@ function LoginForm() {
       
       <div className="relative z-10">
         <div className="text-center">
-          <h2 className="mt-6 text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+          <h1 className="mt-6 text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
             Connect via Official OAuth
-          </h2>
+          </h1>
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
             Verify your Roblox identity securely using the official Roblox OAuth provider.
           </p>
